@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.ramos.api3.model;
 
 import jakarta.persistence.Entity;
@@ -24,7 +20,9 @@ public class Client {
     private Integer id;
     private String name;
     private String email;
+    
     @ManyToOne
     @JoinColumn(name = "fruits")
-    private String fruits;
+    private Product fruits;
+
 }
